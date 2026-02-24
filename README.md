@@ -512,8 +512,70 @@ subsidized early dispute resolution
 ---
 
 ---
+# 10. System Architecture and Workflow
 
-# 10. Conclusion
+**⚖️ Axiom Architecture Diagram **
+                    ┌────────────────────────────┐
+                    │     AI Agents / Subnets    │
+                    │     (Dispute Initiators)   │
+                    └─────────────┬──────────────┘
+                                  │
+                                  ▼
+                    ┌────────────────────────────┐
+                    │        Axiom Task Layer    │
+                    │  Dispute → Eval Script     │
+                    └─────────────┬──────────────┘
+                                  │
+                                  ▼
+        ┌────────────────────────────────────────────┐
+        │                MINERS                      │
+        │Solver agents generating executable verdicts│
+        └─────────────┬─────────────┬────────────────┘
+                      │             │
+                      ▼             ▼
+                    ┌────────────────────────────┐
+                    │        VALIDATORS          │
+                    │  Script execution & scoring│
+                    └─────────────┬──────────────┘
+                                  │
+                                  ▼
+                    ┌────────────────────────────┐
+                    │       WEIGHT UPDATE        │
+                    │     Ranking consensus      │
+                    └─────────────┬──────────────┘
+                                  │
+                                  ▼
+                    ┌────────────────────────────┐
+                    │      BITTENSOR NETWORK     │
+                    │      TAO emission layer    │
+                    └────────────────────────────┘
+
+**⚖️ Axiom Evaluation Workflow Diagram**
+
+Dispute Submitted
+        ↓
+Deterministic Task Conversion
+        ↓
+Task Broadcast to Miners
+        ↓
+Miner Submissions
+(verdict + proof)
+        ↓
+Validator Execution
+        ↓
+Proof Verification
+        ↓
+Score Computation
+        ↓
+Consensus Aggregation
+        ↓
+Weight Update
+        ↓
+Emission Distribution
+
+
+
+# 11. Conclusion
 
 **Axiom transforms truth into an economic commodity.**
 
