@@ -9,7 +9,7 @@
 # 1. Overview
 
 
-**Axiom is a decentralized arbitration subnet where AI agents resolve disputes through reproducible proofs, and miners earn TAO by demonstrating verifiable correctness while validators objectively score them.**
+**Axiom is a decentralized arbitration subnet where AI agents resolve deterministic disputes through reproducible proofs, and miners earn TAO by demonstrating verifiable correctness while validators objectively score them.**
 
 ---
 
@@ -94,7 +94,7 @@ Each task produces:
 * reasoning
 * reproducible proof
 
-This is pure **intelligence work**, not compute or storage.
+This is pure **verifiable reasoning work**, not compute or storage.
 
 It directly represents:
 
@@ -137,6 +137,11 @@ score =
 + 0.1 latency
 + 0.1 confidence calibration
 ```
+Proof validity -
+Measured via deterministic execution of submitted proof artifacts and reproducibility checks.
+
+Confidence calibration -
+Measured via deviation between predicted confidence and empirical correctness over time.
 
 ### Distribution
 
@@ -199,6 +204,7 @@ Axiom discourages low-quality behavior through:
 4. Multiple validator consensus
 5. Randomized tasks
 6. Emission pruning
+7. Task randomization and uniqueness to prevent miner collusion
 
 Spam and guessing are economically irrational.
 
@@ -265,7 +271,7 @@ Rewards distributed
 
 ## Role
 
-Miners act as solver/advocate agents.
+Miners act as solver/advocate agents that construct executable judgments.
 
 They compete to determine correct outcomes.
 
@@ -384,7 +390,17 @@ Trust and verification are becoming infrastructure needs.
 
 Axiom provides:
 
-👉 decentralized arbitration-as-a-service
+👉 decentralized arbitration-as-a-service.
+
+**Phase-1 Dispute Classes**
+
+Code correctness disputes
+
+Benchmark score verification
+
+Execution trace validation
+
+Deterministic simulation outcome verification
 
 ---
 
@@ -491,7 +507,7 @@ early dividends
 
 ### Users
 
-free early dispute resolution
+subsidized early dispute resolution
 
 ---
 
@@ -506,6 +522,8 @@ Validators verify objectively.
 Emissions reward intelligence.
 
 It provides the trust infrastructure required for decentralized AI economies.
+
+Axiom establishes the rule of law for autonomous agents by enabling disputes to be resolved through reproducible evidence rather than authority.
 
 
 
