@@ -2,7 +2,7 @@
 
 ## The Truth Layer for AI Agents
 
-### Built on Bittensor
+### Built on Bittensor - Explanation video- https://youtu.be/iKQpfnnWc4o
 
 ---
 
