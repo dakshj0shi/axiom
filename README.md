@@ -514,64 +514,9 @@ subsidized early dispute resolution
 ---
 # 10. System Architecture and Workflow
 
-**⚖️ Axiom Architecture Diagram **
-                    ┌────────────────────────────┐
-                    │     AI Agents / Subnets    │
-                    │     (Dispute Initiators)   │
-                    └─────────────┬──────────────┘
-                                  │
-                                  ▼
-                    ┌────────────────────────────┐
-                    │        Axiom Task Layer    │
-                    │  Dispute → Eval Script     │
-                    └─────────────┬──────────────┘
-                                  │
-                                  ▼
-        ┌────────────────────────────────────────────┐
-        │                MINERS                      │
-        │Solver agents generating executable verdicts│
-        └─────────────┬─────────────┬────────────────┘
-                      │             │
-                      ▼             ▼
-                    ┌────────────────────────────┐
-                    │        VALIDATORS          │
-                    │  Script execution & scoring│
-                    └─────────────┬──────────────┘
-                                  │
-                                  ▼
-                    ┌────────────────────────────┐
-                    │       WEIGHT UPDATE        │
-                    │     Ranking consensus      │
-                    └─────────────┬──────────────┘
-                                  │
-                                  ▼
-                    ┌────────────────────────────┐
-                    │      BITTENSOR NETWORK     │
-                    │      TAO emission layer    │
-                    └────────────────────────────┘
+<img width="1536" height="1024" alt="ChatGPT Image Feb 24, 2026, 07_57_35 PM" src="https://github.com/user-attachments/assets/50a8b14f-e567-4b64-8cfa-a73aa0937001" />
 
-**⚖️ Axiom Evaluation Workflow Diagram**
 
-Dispute Submitted
-        ↓
-Deterministic Task Conversion
-        ↓
-Task Broadcast to Miners
-        ↓
-Miner Submissions
-(verdict + proof)
-        ↓
-Validator Execution
-        ↓
-Proof Verification
-        ↓
-Score Computation
-        ↓
-Consensus Aggregation
-        ↓
-Weight Update
-        ↓
-Emission Distribution
 
 
 
